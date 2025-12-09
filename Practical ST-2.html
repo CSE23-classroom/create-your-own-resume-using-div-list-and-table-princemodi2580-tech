@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{margin: 0;padding: 0;}
+    main,html,*{
+	margin: 0;padding: 0;
+        background-color: lightblue;
+        align-content: center;
+        justify-content: center;}
+    h1{text-align: center;}
+	.section{
+       		display: grid; 
+            	grid-template-columns:repeat(4,1fr);
+       		gap: 30px;
+        }
+    @media(max-width:1024px){
+        .section{
+             	grid-template-columns: repeat(2,1fr);
+            }
+        }
+     .box{
+         text-align: center;
+         background-color: white;
+         border-radius: 20px;
+         padding: 5px;margin: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+    <h1>Responsive Product Grid</h1>
+     <div class="section">
+     <div class="box"><a href="#">
+	<img src="img.png">
+        <h2>Product 1</h2>
+        <p>High Quality item with great features</p>
+        <h3>Rs 499</h3></a>
+     </div>
+     <div class="box"><a href="#">
+        <img src="img.png">
+        <h2>Product 2</h2>
+        <p>High Quality item with great features</p>
+        <h3>Rs 799</h3></a>
+        </div>
+     <div class="box"><a href="#">
+        <img src="img.png">
+        <h2>Product 3</h2>
+        <p>High Quality item with great features</p>
+        <h3>Rs 799</h3></a>
+     </div>
+</div>
+    </main>
+</body>
+</html>
