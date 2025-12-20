@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,*{
+            margin: 0;padding: 0;
+        }
+        main{
+            margin: 0;padding: 0;
+        }
+        button:hover{
+            border-color: white;
+            border-width: 5px;
+        }
+        #Heading1{
+            margin: 0;padding: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: black;
+            color:white;
+        }
+        
+        #Head1{
+            margin: 0;padding: 0;
+        }
+        #b1{
+            border-radius: 5px;
+            background-color: lightgray;
+            height: 30px;
+        }
+        #b2{
+            background-color: orange;
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+        }
+        #b3{
+            max-width: 300px;
+            min-width: fit-content;
+            height: 25px;
+        }
+        #Head2 button{
+            padding: 5px;
+            background-color: aqua;
+
+        }
+        #Heading2{
+            background-color:darkslategray;
+            padding: 10px;
+        }
+        #Heading2 ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+        #Heading2 ul a{
+            text-decoration: none;
+        }
+        @media(max-width:1024px){
+            #Heading2 ul{
+                display: grid;
+                grid-template-columns: repeat(7,1fr);
+                gap:15px;
+            }
+        }
+        @media(max-width:468px){
+            #Heading2 ul{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+            }
+        }
+        li{
+            color: white;
+        }
+        #Heading3{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            height: auto;
+            gap: 10px;
+            background-color: lightgray;
+        } 
+        @media(max-width:1024px){
+            #Heading3{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        @media(max-width:960px){
+            #Heading3{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media(max-width:600px){
+            #Heading3{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+        .box{
+            background-color: white;
+            margin: 10px;
+            width: 300px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            text-align: center;
+        }
+        .box img{
+            width: 120px;
+        }
+        #Headig4{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        #Head3 img{
+            width: 300px;
+        }
+        .bottom {
+            background-color: darkslategray;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .P1 a{
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+        }
+        @media(max-width){
+        .P1 a{
+            padding: 5px;
+        }
+        }
+        @media(max-width:468px){
+            .bottom{
+                grid-template-columns: repeat(2,1fr);
+                gap: 50px;
+            }
+        }
+        .bottom button{
+            background-color: darkslategray;
+            color: white;
+            width:fit-content;
+            padding-right: 20px;
+            padding-left: 20px;
+            border-width: 1px;
+            border-color: white;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="Heading1">
+            <h2>Amazon</h2>
+            <div id="Head1">
+                <button id="b1">ALL &#5121</button>
+                <input id="b3" placeholder="Search Amazon.in">
+                <button id="b2">&#128269</button>
+            </div>
+            <div id="Head2">
+                <button>Login</button>
+                <button>Sign Up</button>
+            </div>
+        </div>
+        <div id="Heading2">
+            <ul>
+                <a href="#"><li>Fresh</li></a>
+                <a href="#"><li>MX Player</li></a>
+                <a href="#"><li>Sell</li></a>
+                <a href="#"><li>Bestsellers</li></a>
+                <a href="#"><li>Mobiles</li></a>
+                <a href="#"><li>Today's Deals</li></a>
+                <a href="#"><li>Customer Service</li></a>
+                <a href="#"><li>Amazon Pay</li></a>
+                <a href="#"><li>New Releases</li></a>
+                <a href="#"><li>Electronics</li></a>
+                <a href="#"><li>Fashion</li></a>
+                <a href="#"><li>Home & Kitchen</li></a>
+                <a href="#"><li>Books</li></a>
+            </ul>
+        </div>
+        <div id="Heading3">
+            <div class="box">
+                <h3>Revamp Your home in style</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+            <div class="box">
+                <h3>Starting ₹49 | Deals on home essentials</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+            <div class="box">
+                <h3>Bulk order discounts + Up to 18% GST savings</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+            <div class="box">
+                <h3>Appliances for your home | Up to 55% off</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+            <div class="box">
+                <h3>Starting ₹149 | Headphones</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+            <div class="box">
+                <h3>Automotive essentials | Up to 60% off</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+            <div class="box">
+                <h3>Starting ₹199 | Amazon Brands & more</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+            <div class="box">
+                <h3>Up to 50% off | Baby care & toys | Amazon Brands</h3><br>
+                <nav>
+                    <a href="#"><img src="img1.jpeg"></a>
+                    <p>Cushion, Covers & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img2.jpeg"></a>
+                    <p>Figurines, Vases & more</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img3.jpeg"></a>
+                    <p>Home Storage</p>
+                </nav>
+                <nav>
+                    <a href="#"><img src="img4.jpeg"></a>
+                    <p>Lighting Solutions</p>
+                </nav>
+            </div>
+        </div>
+        <div id="Heading4">
+            <h2>Starting ₹70,348 | From daily commutes to weekend thrills</h2>
+            <a href="#">See all offers</a>
+            <nav id="Head3">
+                <img src="bike1.jpeg">
+                <img src="bike2.jpeg">
+                <img src="bike3.jpeg">
+                <img src="bike4.jpeg">
+                <img src="bike5.jpeg">
+                <img src="bike6.jpeg">
+                <img src="bike7.jpeg">
+            </nav>
+        </div>
+        <div class="bottom">
+            <div class="P1">
+                <h2>Get to know Us</h2>
+                <a href="#">About Amazon</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="P1">
+                <h2>Connect with Us</h2>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Amazon Science</a>
+            </div>
+            <div class="P1">
+                <h2>Make Money with Us</h2>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon<br>Accelerator</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#">Amazon Global Selling</a>
+                <a href="#">Supply to Amazon</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Fulfilment by Amazon</a>
+                <a href="#">Advertise Your Products</a>
+                <a href="#">Amazon Pay on Merchants</a>
+            </div>
+            <div class="P1">
+                <h2>Let Us Help You</h2>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#">Recalls and Product Safety Alerts</a>
+                <a href="#">100% Purchase Protection</a>
+                <a href="#">Amazon App Download</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            <button>India</button>
+            <a href="lang.html">Language</a>
+        </div>
+    </main>
+</body>
+</html>
